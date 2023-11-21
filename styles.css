@@ -1,0 +1,39 @@
+body{
+
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(450deg, black, rgb(40, 45, 80));
+}
+.mainContainer{
+    background:url("./fondo-banner-blanco-juegos_23-2150390425.png");
+    background-position: center;
+    background-size: cover;
+    width: 1000PX;
+    height: 80vh;
+    display: flex;
+    justify-content: start;
+    padding-left: 50px;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.tribuna img{
+    width: 300px;
+    position: absolute;
+    bottom:50px;
+    left: 0;
+}
+
+.title{
+    position: absolute;
+    top: 0;
+}
+
+.title h2{
+    color: white;
+    font-family: "Press Start 2P";
+    font-size: 50px;
+}
