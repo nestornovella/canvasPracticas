@@ -21,8 +21,8 @@ class GetPaddle {
   w;
   h = 50;
   color;
-  speed = 20;
-  constructor({ x = 1, w, color = "blue" }) {
+  speed = 40;
+  constructor({ x = 1, w, color = "green" }) {
     this.x = x;
     this.w = w;
     this.color = color;
@@ -52,7 +52,7 @@ class GetPaddle {
 }
 
 function drawCourt() {
-  ctx.strokeStyle = "grey";
+  ctx.strokeStyle = 'violet'
   ctx.strokeWidth = 11;
   ctx.lineWidth = 5;
   ctx.fillStyle = 'black'
@@ -66,6 +66,12 @@ function drawCourt() {
   ctx.beginPath();
   ctx.arc(canvas.width / 2, canvas.height / 2, 40, 0, 7);
   ctx.stroke();
+  ctx.closePath();
+  ctx.stroke();
+  ctx.closePath();
+  ctx.beginPath();
+  ctx.lineWidth = 5
+  ctx.strokeRect(0, 0, canvas.width, canvas.height)
   ctx.closePath();
 }
 
